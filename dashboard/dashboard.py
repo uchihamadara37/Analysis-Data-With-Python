@@ -99,7 +99,7 @@ with col1:
         explode=(0, 0.1),
         textprops={'fontsize': 40}
     )
-    ax.set_title("Rental on Holiday or Not", loc="center", fontsize=50)
+    ax.set_title("Rental on Holiday", loc="center", fontsize=50)
     ax.tick_params(axis='x', labelsize=35)
     ax.tick_params(axis='y', labelsize=30)
     st.pyplot(fig)
@@ -114,7 +114,7 @@ with col2:
         explode=(0.1, 0),
         textprops={'fontsize': 40}
     )
-    ax.set_title("Rental on Workingday or Not", loc="center", fontsize=50)
+    ax.set_title("Rental on Workingday", loc="center", fontsize=50)
     ax.tick_params(axis='x', labelsize=35)
     ax.tick_params(axis='y', labelsize=30)
     st.pyplot(fig)
