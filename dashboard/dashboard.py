@@ -33,7 +33,9 @@ def create_working_rental_df(df):
 def create_daily_rent(df):
     return df.groupby("dteday")[["casual","registered","cnt"]].sum().sort_index()
 
-all_df = pd.read_csv("../data/all_data.csv")
+
+# sempat error ketika diupload, sepertinya beda cwd
+all_df = pd.read_csv("https://raw.githubusercontent.com/uchihamadara37/Analysis-Data-With-Python/refs/heads/main/data/all_data.csv")
 
 all_df["dteday"] = pd.to_datetime(all_df["dteday"])
 
